@@ -1,0 +1,61 @@
+/*
+This is an example of data/user.css file to change colors from Blue to Teal.
+Example color palettes available here: https://material.io/guidelines/style/color.html#color-color-palette
+- Base color: #455A64
+- Focus color: #F57C00
+- Active color: #EF6C00
+ */
+ div.awesomplete > ul > li[aria-selected=true],
+ .button-primary,
+ [type="radio"]:checked + label:after,
+ [type="radio"].with-gap:checked + label:after,
+ [type=checkbox].filled-in:checked + label:after,
+ .switch label input[type=checkbox]:checked + .lever:after,
+ .header-main {
+     background-color: #455A64;
+ }
+ .button-primary:hover, .button-primary:focus{
+     background-color: #F57C00;
+ }
+ .button-primary:active{
+     background-color: #EF6C00;
+ }
+ 
+ a, label.active {
+     color: #EF6C00; 
+ }
+ 
+ a.link-url>span:hover, a:hover, a:focus {
+     color: #F57C00; 
+ }
+ 
+ a:active {
+     color: #EF6C00; 
+ }
+ 
+ input[type=text]:focus,
+ input[type=search]:focus,
+ input[type=number]:focus,
+ input[type=password]:focus,
+ textarea:focus {
+     border-color: #455A64;
+     box-shadow: 0 1px 0 #455A64;
+     outline: none; 
+ }
+ input.input-big:focus{
+     box-shadow: none;
+ }
+ 
+ select:focus,
+ [type="radio"]:checked + label:after,
+ [type="radio"].with-gap:checked + label:before,
+ [type="radio"].with-gap:checked + label:after,
+ [type="checkbox"]:checked + label:before,
+ [type="checkbox"] :indeterminate + label:before,
+ [type=checkbox].filled-in:checked + label:after {
+     border-color: #455A64;
+ }
+ 
+ .subheader{
+     background-color: #F57C00;
+ }

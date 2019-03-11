@@ -1,4 +1,2 @@
 /tmp
 /cache
-/data
-!/data/config.json.php
