@@ -10,7 +10,7 @@
         "update_check": "data\/lastupdatecheck.txt",
         "history": "data\/history.php",
         "raintpl_tpl": "tpl\/",
-        "theme": "default",
+        "theme": "material",
         "raintpl_tmp": "tmp\/",
         "thumbnails_cache": "cache",
         "page_cache": "pagecache"
@@ -33,6 +33,7 @@
         "enabled_plugins": [
             "qrcode",
             "markdown",
+            "url_externe",
             "save",
             "token"
         ],
@@ -70,7 +71,9 @@
     "translation": {
         "language": "fr",
         "mode": "php",
-        "extensions": []
+        "extensions": {
+            "demo": "plugins\/demo_plugin\/languages\/"
+        }
     },
     "plugins": [],
     "credentials": {
