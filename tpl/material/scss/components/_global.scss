@@ -1,0 +1,73 @@
+*, 
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html{
+    background: #ececec;
+    font-size: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    font-family: $font-stack;
+    font-size: $font-size;
+    background: #ececec;
+    color: $color-text;
+}
+h1{
+    @include font-headline();
+    margin: $space-s 0 $space-l 0;
+}
+h2{
+    @include font-subheading();
+    margin-bottom: $space-m;
+}
+p{
+    margin-bottom: $space-m;
+    @include font-body();
+}
+a{
+    color: $color-primary;
+
+    &:hover,
+    &:focus{
+        color: darken($color-primary, 5%);
+    }
+
+    &:active{
+        color: darken($color-primary, 10%)
+    }
+}
+em{
+    font-style: italic;
+}
+strong{
+    font-weight: bold;
+}
+small {
+    font-size: 80%;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+@-ms-viewport {
+    width: device-width;
+}

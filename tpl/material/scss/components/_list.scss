@@ -1,0 +1,205 @@
+/* Generic classes */
+.list-label{
+    @include font-subheading();
+    color: $color-text;
+}
+.list-sublabel{
+    margin-top: $space-t;
+    @include font-caption();
+    color: $color-subtitle;
+}
+
+.list-item{
+    display: block;
+    padding: $space-m;
+}
+
+.list-item-text{
+    padding: $space-m;
+}
+
+// Controls (button with icon) displayed withing list item.
+.list-item-controls{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .list-item-control{
+        color: $color-subtitle;
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus{
+            background-color: #eee;
+        }
+
+        &:active{
+            background-color: #ddd;
+        }
+    }
+
+    .is-control-visible-hover &{
+        display: none;
+    }
+    .is-control-visible-hover:hover &{
+        display: inherit;
+    }
+
+    .is-control-opaque-hover &{
+        opacity: .5;
+    }
+    .is-control-opaque-hover:hover &{
+        opacity: 1;
+    }
+}
+
+.list-item-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid $color-gray-light;
+
+    .card-header + &:first-child{
+        border-top: 0;
+    }
+
+    &:last-child{
+        border-bottom: 1px solid $color-gray-light;
+    }
+
+    .list-item-start{
+        padding-left: $space-m;
+    }
+
+    .list-item-middle{
+        flex-grow: 1;
+    }
+
+    .list-item-end{
+        padding-right: $space-m;
+    }
+}
+
+label.list-item-content{
+    margin: 0;
+}
+
+/* List clickable */
+.list-action{
+    .list-item{
+        display: block;
+        cursor: pointer;
+        color: $color-text;
+
+        border-top: 1px solid $color-gray-light;
+
+        .card-header + &:first-child{
+            border-top: 0;
+        }
+
+        &:last-child{
+            border-bottom: 1px solid $color-gray-light;
+        }
+
+        &:hover,
+        &:focus{
+            background-color: $color-gray-hover;
+            text-decoration: none;
+        }
+
+        .list-item-label{
+            @extend .list-label;
+        }
+
+        .list-item-sublabel{
+            @extend .list-sublabel;
+        }
+    }
+}
+
+.list-action.list-big{
+    .list-item-label{
+        font-size: 1.2rem;
+    }
+
+    .list-item-sublabel{
+        margin-top: $space-t;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $color-subtitle;
+    }
+}
+
+/* List with a side content on the right (ex: a list of settings with checkboxes on the right) */
+.list-side-right{
+    .list-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: $space-l $space-m;
+
+        border-top: 1px solid $color-gray-light;
+
+        &:last-child{
+            border-bottom: 1px solid $color-gray-light;
+        }
+    }
+
+    .list-item-label{
+        @extend .list-label;
+    }
+
+    .list-item-sublabel{
+        @extend .list-sublabel;
+        margin-top: $space-t;
+    }
+}
+
+
+.list-sortable{
+    
+    .list-item{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .list-item-content{
+            flex: 1;
+        }
+    }
+
+    .list-sortable-handle{
+        padding: $space-s;
+        cursor: move;
+        font-size: 2rem;
+        color: $color-subtitle;
+    }
+
+    .list-item-label{
+        @extend .list-label;
+    }
+
+    .list-item-sublabel{
+        @extend .list-sublabel;
+        margin-top: $space-t;
+    }
+    
+}
+
+.list-checkable{
+    input[type=checkbox]{
+        display: block;
+        margin-right: $space-m;
+    }
+}

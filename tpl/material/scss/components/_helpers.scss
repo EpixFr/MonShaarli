@@ -1,0 +1,146 @@
+.nowrap{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.no-border{
+    border: none !important;
+}
+
+hr.darker{
+    border-top-color: #ccc;
+}
+hr.margin{
+    margin-left: $space-xl;
+    margin-right: $space-xl;
+}
+
+.mts{
+    margin-top: 5px;
+}
+.mtm{
+    margin-top: 15px;
+}
+.mtl{
+    margin-top: 30px;
+}
+.mbs{
+    margin-bottom: 5px;
+}
+.mbm{
+    margin-bottom: 15px;
+}
+.mbl{
+    margin-bottom: 30px;
+}
+.dark{
+    background-color: #000;
+}
+
+.round-image-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    text-align: center;
+
+    i{
+        font-size: 45px;
+        line-height: 60px;
+
+        &.mdi-settings{
+            color: #009688;
+        }
+        &.mdi-lock{
+            color: #DB4437;
+        }
+        &.mdi-puzzle{
+            color: #03A9F4;
+        }
+        &.mdi-tag-multiple{
+            color: #FF9800;
+        }
+        &.mdi-file-import{
+            color: #9C27B0;
+        }
+        &.mdi-file-export{
+            color: #795548;
+        }
+        &.mdi-image {
+            color: #9E9E9E;
+        }
+    }
+}
+p.highlight{
+    color: #F44336;
+}
+
+/* Nothing found */
+.nothing-found{
+    text-align: center;
+    @include font-display1();
+    color: #999;
+    margin-bottom: 100px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-success{
+    color: #4CAF50;
+}
+
+.text-error{
+    color: #F44336;
+}
+
+.text-feedback{
+    display: inline-block;
+    margin-left: $space-s;
+    margin-right: $space-s;
+    font-style: italic;
+    font-size: 90%;
+}
+
+.pull-left{
+    float: left!important;
+}
+.pull-right {
+    float: right!important;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.is-highlighted-hover{
+    &:hover{
+        background-color: $color-gray-hover-light;
+    }
+}
+
+ul.is-bordered{
+    li{
+        padding: $space-t;
+        border: 1px solid $color-gray-light;
+        border-bottom: none;
+        background-color: $color-gray-hover;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &:last-child{
+            border-bottom: 1px solid $color-gray-light;
+        }
+    }
+}

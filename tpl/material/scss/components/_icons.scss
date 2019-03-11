@@ -1,0 +1,102 @@
+.mdi {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.mdi-arrow-left:before {
+    content: "\F04D";
+}
+.mdi-arrow-right:before {
+    content: "\F054";
+}
+.mdi-menu:before {
+    content: "\F35C";
+}
+.mdi-pencil:before{
+    content: "\F3EB";
+}
+.mdi-delete:before {
+  content: "\F1C0";
+}
+.mdi-magnify-plus-outline:before {
+  content: "\f6ec";
+}
+.mdi-tag:before{
+    content: "\f4f9";
+}
+.mdi-filter:before{
+    content: "\f232";
+}
+.mdi-rss:before{
+    content: "\f46b";
+}
+.mdi-key:before{
+    content: "\f306";
+}
+.mdi-settings:before{
+    content: "\f493";
+}
+.mdi-logout:before{
+    content: "\f343";
+}
+.mdi-account:before{
+    content: "\f004";
+}
+.mdi-dots-vertical:before{
+    content: "\f1d9";
+}
+.mdi-firefox:before{
+    content: "\f239";
+}
+.mdi-google-chrome:before{
+    content: "\f2af";
+}
+.mdi-android:before{
+    content: "\f032";
+}
+.mdi-apple-ios:before{
+    content: "\f037";
+}
+.mdi-lock:before{
+    content: "\f33e";
+}
+.mdi-puzzle:before{
+    content: "\f431";
+}
+.mdi-tag-multiple:before{
+    content: "\f4fb";
+}
+.mdi-file-import:before{
+    content: "\f220";
+}
+.mdi-file-export:before{
+    content: "\f21d";
+}
+.mdi-plus:before{
+    content: "\f415";
+}
+.mdi-note:before{
+    content: "\f39a";
+}
+.mdi-checkbox-marked-outline:before{
+    content: "\f135";
+}
+.mdi-link:before {
+    content: "\F337";
+}
+.mdi-pin:before {
+    content: "\F403";
+}
+.mdi-qrcode:before {
+    content: "\F432";
+}
+.mdi-close:before {
+    content: "\F156";
+}
+.mdi-image:before {
+    content: "\F2E9";
+}
