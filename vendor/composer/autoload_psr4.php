@@ -7,6 +7,14 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'pubsubhubbub\\publisher\\' => array($vendorDir . '/pubsubhubbub/publisher/library'),
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
+    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
+    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
+    'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
     'Shaarli\\Security\\' => array($baseDir . '/application/security'),
     'Shaarli\\Config\\Exception\\' => array($baseDir . '/application/config/exception'),
@@ -23,4 +31,6 @@ return array(
     'Gettext\\Languages\\' => array($vendorDir . '/gettext/languages/src'),
     'Gettext\\' => array($vendorDir . '/gettext/gettext/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
+    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

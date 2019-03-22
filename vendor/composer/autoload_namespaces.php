@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WebThumbnailer\\' => array($vendorDir . '/arthurhoaro/web-thumbnailer/src', $vendorDir . '/arthurhoaro/web-thumbnailer/tests'),
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
 );
